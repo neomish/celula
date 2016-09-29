@@ -1,0 +1,57 @@
+body {
+    padding: 10px;
+    background-color: #666699;
+    color: #000000;
+}
+
+header {
+    padding: 10px;
+    background-color: #8585ad;
+    color: #000000;
+    border-radius: 5px;
+}
+
+nav {
+    padding: 10px;
+    background-color: #52527a;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.contenedor {
+    padding: 10px;
+    background-color: #8585ad;
+    color: #000000;
+    border-radius: 5px;
+}
+
+aside {
+    padding: 10px;
+    background-color: #52527a;
+    color: #000000;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 10px;
+    background-color: #8585ad;
+    color: #000000;
+    border-radius: 5px;
+}
+
+
+input {
+    border-radius: 5px;
+}
+
+/**  Bonotnes de bootstrap **/
+
+.btn-default {
+    background: #b3b3cc;
+    color: #000000;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background: #c2c2d6;
+    color: #000000;
+}
