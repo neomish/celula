@@ -17,31 +17,33 @@
 
     </head>
     <body>
-        <header class='col_xs_12 col-md-12'>
+        <header class='col-xs-12 col-sm-12 col-md-12'>
             <h1>
                 {NOMBRE_DEL_SISTEMA}
 
             </h1>
         </header>
 
-        <nav role='navigation' class='col_xs_12 col-md-12'>
+        <nav role='navbar navbar-default' class='col-xs-12 col-sm-12 col-md-12'>
+            <div class="container-fluid">
                 {NAVEGACION_DE_LA_PLANTILLA}
 
+            </div>
         </nav>
 
-        <section class='contenedor col_xs_12 col-md-9'>
+        <section class='container contenedor col-xs-12 col-sm-12 col-md-9'>
             <article class=''>
                 {CONTENIDO_DE_LA_PLANTILLA}
 
             </article>
         </section>
 
-        <aside class='col_xs_12 col-md-3'>
+        <aside class='navbar navbar-nav col-xs-12 col-sm-12 col-md-3'>
             {LATERAL_DE_LA_PLANTILLA}
 
         </aside>
 
-        <footer class='col_xs_12 col-md-12'>
+        <footer class='col-xs-12 col-sm-12 col-md-12'>
             <p>
                 Creado por {AUTOR_DEL_SISTEMA}
             </p>

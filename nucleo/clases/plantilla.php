@@ -121,7 +121,7 @@
             }
             $VECTOR_DE_DATOS = array();
             if ( file_exists( './nucleo/aplicaciones/' . $contenido . '.php' ) ) {
-                include ( './nucleo/aplicaciones/' . $contenido . '.php' );
+                include './nucleo/aplicaciones/' . $contenido . '.php';
             }
             $contenido_plantilla = $this->obtener_subelemento( $contenido , $VECTOR_DE_DATOS );
             $this->datos = array_merge( $this->datos , [ "CONTENIDO_DE_LA_PLANTILLA" => $contenido_plantilla ] );

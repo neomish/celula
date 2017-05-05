@@ -6,7 +6,7 @@
 
         <input type='hidden' name='contenido' value='logueo' />
 
-        <div class='input-group col_xs_4 col-md-4'>
+        <div class='input-group col-xs-12 col-sm-12 col-md-4'>
             <span class='input-group-addon' id='usuario-l'>
                 <i class='fa fa-user'>
                 </i>
@@ -14,7 +14,7 @@
             <input class='form-control' aria-describedby='usuario-l' type='text' name='usuario' placeholder='Usuario' />
         </div>
 
-        <div class='input-group col_xs_4 col-md-4'>
+        <div class='input-group col-xs-12 col-sm-12 col-md-4'>
             <span class='input-group-addon' id='clave-l'>
                 <i class='fa fa-key'>
                 </i>
@@ -22,7 +22,7 @@
             <input class='form-control' aria-describedby='clave-l' type='password' name='clave' placeholder='Clave' />
         </div>
 
-        <input type='submit' class='btn btn-success col_xs_4 col-md-4' name='acceso' value='Ingresar' />
+        <input type='submit' class='btn btn-success col-xs-12 col-sm-12 col-md-4' name='acceso' value='Ingresar' />
 
     </form>
 </p>
