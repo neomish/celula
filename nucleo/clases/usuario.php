@@ -6,7 +6,8 @@
         private $estado;     // por purísima excentricidad se almacenará el estado del posible usuario
         private $unico;      // algo que se necesita para identificar las sesiones
 
-        function Usuario( ){
+        # function Usuario( ){
+        function __construct ( ){
             include "./configuracion/sistema.php";
             $this->unico[ 'usuario' ] = $LOCALIZACION_UNICA . "USUARIO";
             $this->unico[ 'roles' ]   = $LOCALIZACION_UNICA . "ROLES";
@@ -33,10 +34,11 @@
             if ( $solicitud == 'Ingresar'  && !isset( $_SESSION[ $this->unico[ 'usuario' ] ] ) ) {
                 $usuario = @ $_REQUEST[ 'usuario' ];
                 $clave   = @ $_REQUEST[  'clave'  ];
-                if ( $usuario == $USUARIO_ADMINISTRADOR && md5( $clave ) == $CLAVE_DE_ADMINISTRADOR ) {
+                # if ( $usuario == $USUARIO_ADMINISTRADOR && md5( $clave ) == $CLAVE_DE_ADMINISTRADOR ) {
+                if ( $usuario == $USUARIO_ADMINISTRADOR && password_verify( $clave , $CLAVE_DE_ADMINISTRADOR ) ) {
                     $_SESSION[ $this->unico[ 'usuario' ] ] = $usuario ;
-                    $_SESSION[ $this->unico[ 'roles'   ]   ] = array( "root" );
-                    $_SESSION[ $this->unico[ 'estado'  ]  ] = true;
+                    $_SESSION[ $this->unico[ 'roles'   ] ] = array( "root" );
+                    $_SESSION[ $this->unico[ 'estado'  ] ] = true;
                     $retorno = true;
                     $_REQUEST[ 'contenido' ] = "contenido_privado";
                 }

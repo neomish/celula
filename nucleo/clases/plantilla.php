@@ -10,7 +10,8 @@
         private $unico;          // Es un valor para tratar de hacer únicas las sesiones
         public $html;            // Aca se almacena el contenido ya procesado de la plantilla dejando el puro HTML
 
-        function Plantilla( $archivo , $valores = array() ) {
+        # function Plantilla( $archivo , $valores = array() ) {
+        function __construct ( $archivo , $valores = array() ) {
             include "./configuracion/sistema.php";
             $this->unico = $LOCALIZACION_UNICA;
             if ( file_exists( './nucleo/vistas/' . $archivo . '.tpl' ) ) {
@@ -173,6 +174,7 @@
             $this->html = preg_replace( '~\{ENDLOOP:(\w+)\}~', '<?php $this->desenvolver( ); endforeach; } else { } ?>', $this->html );
             $this->html = '?>' . $this->html;
             $this->html = $this->correr( $this->html );
+            #$this->embellecer();
         }
 
         function embellecer(){

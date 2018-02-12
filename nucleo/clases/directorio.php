@@ -9,7 +9,8 @@
 
     # Métodos
 
-    function Directorio ( $ruta ) {
+    #function Directorio ( $ruta ) {
+    function __construct ( $ruta ) {
       $this->ruta = $ruta;
     }
 

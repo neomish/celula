@@ -40,3 +40,4 @@
     <input type='submit' class='btn btn-success col-xs-12 col-sm-12 col-md-12' name='accion' value='Guardar' />
 
 </form>
+{MENSAJE_DE_GUARDADO}
