@@ -23,9 +23,9 @@
             $solicitud = @ $_REQUEST[ 'acceso' ];
             if ( $solicitud == 'Salir' && isset( $_SESSION[ $this->unico[ 'usuario' ] ] ) ) {
                 $_SESSION[ $this->unico[ 'usuario' ] ] = NULL;
-                $_SESSION[ $this->unico[ 'roles'   ]   ] = NULL;
-                $_SESSION[ $this->unico[ 'estado'  ]  ] = NULL;
-                session_unset($_SESSION[ $this->unico[ 'usuario' ] ]);
+                $_SESSION[ $this->unico[ 'roles'   ] ] = NULL;
+                $_SESSION[ $this->unico[ 'estado'  ] ] = NULL;
+                // @ session_unset($_SESSION[ $this->unico[ 'usuario' ] ]);
                 // @ session_unset($_SESSION[ $this->unico[ 'roles'   ] ]);
                 // @ session_unset($_SESSION[ $this->unico[ 'estado'  ] ]);
                 // session_destroy();
